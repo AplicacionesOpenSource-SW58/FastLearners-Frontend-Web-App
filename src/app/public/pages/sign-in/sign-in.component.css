@@ -1,0 +1,14 @@
+.signInForm{
+  text-align: center;
+  flex: auto;
+}
+
+.email{
+  align-self: center;
+}
+.password{
+  align-self: center;
+}
+.buttons{
+  align-self: center;
+}

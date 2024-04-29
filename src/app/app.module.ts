@@ -23,6 +23,7 @@ import {MatPaginatorModule} from "@angular/material/paginator";
 import {MatToolbarModule} from "@angular/material/toolbar";
 import {HttpClientModule} from "@angular/common/http";
 import {FormsModule} from "@angular/forms";
+import {MatDialogActions} from "@angular/material/dialog";
 
 @NgModule({
   declarations: [
@@ -49,6 +50,7 @@ import {FormsModule} from "@angular/forms";
     MatIconModule,
     MatPaginatorModule,
     MatToolbarModule,
+    MatDialogActions,
   ],
   providers: [
     provideAnimationsAsync()

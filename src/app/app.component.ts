@@ -7,10 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'FastLearners-WebApp';
-  options = [
+  toolbar_options = [
     { path: '/home', title: 'Pagina Principal'},
     { path: '/forum', title: 'Foro Estudiantil' },
     { path: '/repos', title: 'Repositorios' },
-    { path: '/multimedia', title: 'Portal de Material Multimedia' }
+    { path: '/multimedia', title: 'Portal de Material Multimedia' },
+    { path: '/subscriptions', title: 'Subscripciones' }
   ]
+  account_button = {path: '/account', title: 'Mi Cuenta'}
 }
