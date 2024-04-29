@@ -1,0 +1,14 @@
+{
+  "repositories": [
+    {
+      "id": 1,
+      "name": "Repo Angular",
+      "description": "Angular learning resources"
+    },
+    {
+      "id": 2,
+      "name": "Repo Python",
+      "description": "Python learning resources"
+    }
+  ]
+}
