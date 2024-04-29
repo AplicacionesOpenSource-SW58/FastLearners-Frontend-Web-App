@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'FastLearners-WebApp';
+  options = [
+    { path: '/home', title: 'Pagina Principal'},
+    { path: '/forum', title: 'Foro Estudiantil' },
+    { path: '/repos', title: 'Repositorios' },
+    { path: '/multimedia', title: 'Portal de Material Multimedia' }
+  ]
 }

@@ -11,8 +11,18 @@ import { PaymentFormComponent } from './public/pages/payment-form/payment-form.c
 import { SubscriptionsComponent } from './public/pages/subscriptions/subscriptions.component';
 import { ForumComponent } from './public/pages/forum/forum.component';
 import { ReposComponent } from './public/pages/repos/repos.component';
+
 import { MultimediaComponent } from './public/pages/multimedia/multimedia.component';
 import { UserAccountComponent } from './public/pages/user-account/user-account.component';
+import {MatInputModule} from "@angular/material/input";
+import {MatButtonModule} from "@angular/material/button";
+import {MatTableModule} from "@angular/material/table";
+import {MatSortModule} from "@angular/material/sort";
+import {MatIconModule} from "@angular/material/icon";
+import {MatPaginatorModule} from "@angular/material/paginator";
+import {MatToolbarModule} from "@angular/material/toolbar";
+import {HttpClientModule} from "@angular/common/http";
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -29,7 +39,16 @@ import { UserAccountComponent } from './public/pages/user-account/user-account.c
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    MatInputModule,
+    MatButtonModule,
+    MatTableModule,
+    MatSortModule,
+    MatIconModule,
+    MatPaginatorModule,
+    MatToolbarModule,
   ],
   providers: [
     provideAnimationsAsync()
