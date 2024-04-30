@@ -13,7 +13,7 @@ export class ReposComponent implements OnInit {
   constructor(private http: HttpClient) {}
 
   ngOnInit(): void {
-    this.http.get('/api/repositories').subscribe((data: any) => {
+    this.http.get('http://localhost:3000/repositories').subscribe((data: any) => {
       this.repos = data;
     });
   }

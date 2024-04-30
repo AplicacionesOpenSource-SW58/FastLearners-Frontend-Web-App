@@ -2,13 +2,33 @@
   "repositories": [
     {
       "id": 1,
-      "name": "Repo Angular",
-      "description": "Angular learning resources"
+      "name": "Repositorio de Angular",
+      "description": "Angular learning resources",
+      "lastUpdated": "2024-01-01"
     },
     {
       "id": 2,
-      "name": "Repo Python",
-      "description": "Python learning resources"
+      "name": "Repositorio de Python",
+      "description": "Python learning resources",
+      "lastUpdated": "2024-01-02"
+    },
+    {
+      "id": 3,
+      "name": "Repositorio de JavaScript",
+      "description": "JavaScript learning resources",
+      "lastUpdated": "2024-01-03"
+    },
+    {
+      "id": 4,
+      "name": "Repositorio de TypeScript",
+      "description": "TypeScript learning resources",
+      "lastUpdated": "2024-01-04"
+    },
+    {
+      "id": 5,
+      "name": "Repositorio de Dart",
+      "description": "Dart learning resources",
+      "lastUpdated": "2024-01-05"
     }
   ]
 }
