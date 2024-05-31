@@ -1,0 +1,7 @@
+body {
+  background-image: url('/assets/MainPageImage_002.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh; /* Asegura que la imagen cubra al menos la altura completa de la ventana */
+}

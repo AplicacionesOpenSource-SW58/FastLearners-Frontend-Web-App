@@ -12,7 +12,7 @@ export class AppComponent {
     { path: '/forum', title: 'Foro Estudiantil' },
     { path: '/repos', title: 'Repositorios' },
     { path: '/multimedia', title: 'Portal de Material Multimedia' },
-    { path: '/subscriptions', title: 'Subscripciones' }
+    { path: '/subscriptions', title: 'Suscripciones' }
   ]
   account_button = {path: '/account', title: 'Mi Cuenta'}
 }

@@ -1,4 +1,36 @@
 {
+  "forums": [
+    {
+      "id": 1,
+      "title": "General Discussion",
+      "description": "Discuss general topics related to the site and its operation.",
+      "threads": 120,
+      "posts": 840,
+      "image": "https://randomuser.me/api/portraits/women/71.jpg",
+      "lastPoster": "Eva Green",
+      "lastPostTime": "07/10/2023"
+    },
+    {
+      "id": 2,
+      "title": "Technical Support",
+      "description": "Get help with technical issues from the community.",
+      "threads": 80,
+      "posts": 300,
+      "image": "https://randomuser.me/api/portraits/women/72.jpg",
+      "lastPoster": "Carmen Lucia",
+      "lastPostTime": "21/04/2023"
+    },
+    {
+      "id": 3,
+      "title": "Feature Requests",
+      "description": "Suggest and discuss new features for the site.",
+      "threads": 50,
+      "posts": 150,
+      "image": "https://randomuser.me/api/portraits/men/70.jpg",
+      "lastPoster": "David Lee",
+      "lastPostTime": "02/09/2022"
+    }
+  ],
   "repositories": [
     {
       "id": 1,
@@ -29,6 +61,38 @@
       "name": "Repositorio de Dart",
       "description": "Dart learning resources",
       "lastUpdated": "2024-01-05"
+    }
+  ],
+  "channels": [
+    {
+      "id": 1,
+      "category": "JavaScript Basics",
+      "author": "Juan Perez",
+      "files": 5
+    },
+    {
+      "id": 2,
+      "category": "React Components",
+      "author": "Maria Rodriguez",
+      "files": 8
+    },
+    {
+      "id": 3,
+      "category": "Vue.js Projects",
+      "author": "Pedro Gomez",
+      "files": 6
+    },
+    {
+      "id": 4,
+      "category": "Node.js Development",
+      "author": "Ana Martinez",
+      "files": 10
+    },
+    {
+      "id": 5,
+      "category": "HTML & CSS Fundamentals",
+      "author": "Luis Hernandez",
+      "files": 7
     }
   ]
 }

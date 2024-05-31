@@ -24,6 +24,14 @@ import {MatToolbarModule} from "@angular/material/toolbar";
 import {HttpClientModule} from "@angular/common/http";
 import {FormsModule} from "@angular/forms";
 import {MatDialogActions} from "@angular/material/dialog";
+import {
+  MatCard,
+  MatCardActions,
+  MatCardContent,
+  MatCardHeader,
+  MatCardSubtitle,
+  MatCardTitle
+} from "@angular/material/card";
 
 @NgModule({
   declarations: [
@@ -51,6 +59,12 @@ import {MatDialogActions} from "@angular/material/dialog";
     MatPaginatorModule,
     MatToolbarModule,
     MatDialogActions,
+    MatCard,
+    MatCardHeader,
+    MatCardContent,
+    MatCardActions,
+    MatCardSubtitle,
+    MatCardTitle
   ],
   providers: [
     provideAnimationsAsync()
