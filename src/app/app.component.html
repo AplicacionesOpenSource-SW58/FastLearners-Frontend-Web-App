@@ -1,11 +1,3 @@
-<mat-toolbar color="primary">
-  <h1>Fast Learners</h1>
-  <div class="mat-spacer"></div>
-  <a mat-button *ngFor="let option of toolbar_options"
-     [routerLink]="option.path">{{ option.title }}
-  </a>
-  <span class="spacer"></span>
-  <a mat-raised-button [routerLink]="account_button.path">{{account_button.title}}</a>
-</mat-toolbar>
+<app-custom-toolbar></app-custom-toolbar>
 
 <router-outlet></router-outlet>

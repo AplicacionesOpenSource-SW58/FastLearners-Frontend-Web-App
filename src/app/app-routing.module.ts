@@ -4,8 +4,8 @@ import { SignInComponent } from "./public/pages/sign-in/sign-in.component";
 import { ReposComponent } from "./public/pages/repos/repos.component";
 import { ForumComponent } from "./public/pages/forum/forum.component";
 import { MultimediaComponent } from "./public/pages/multimedia/multimedia.component";
-import {SubscriptionsComponent} from "./public/pages/subscriptions/subscriptions.component";
-import {UserAccountComponent} from "./public/pages/user-account/user-account.component";
+import { SubscriptionsComponent } from "./public/pages/subscriptions/subscriptions.component";
+import { UserAccountComponent } from "./public/pages/user-account/user-account.component";
 
 const routes: Routes = [
   { path: 'home', component: SignInComponent },
