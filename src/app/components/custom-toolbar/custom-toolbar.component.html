@@ -1,9 +1,12 @@
 <mat-toolbar class="spacer">
+  <img src="/assets/Logo.svg" alt="logo-toolbar" class="logo-toolbar">
   <h1>Fast Learners</h1>
-  <div class="mat-spacer"></div>
-  <a mat-button *ngFor="let option of toolbar_options"
-     [routerLink]="option.path">{{ option.title }}
-  </a>
+  <div class="spacer"></div>
+  <a mat-button [routerLink]="home_button.path" class="toolbar-button">{{home_button.title}}</a>
+  <a mat-button [routerLink]="forum_button.path" class="toolbar-button">{{forum_button.title}}</a>
+  <a mat-button [routerLink]="repos_button.path" class="toolbar-button">{{repos_button.title}}</a>
+  <a mat-button [routerLink]="multimedia_button.path" class="toolbar-button">{{multimedia_button.title}}</a>
+  <a mat-button [routerLink]="subscriptions_button.path" class="toolbar-button">{{subscriptions_button.title}}</a>
   <span class="spacer"></span>
   <a mat-raised-button [routerLink]="account_button.path">{{account_button.title}}</a>
 </mat-toolbar>

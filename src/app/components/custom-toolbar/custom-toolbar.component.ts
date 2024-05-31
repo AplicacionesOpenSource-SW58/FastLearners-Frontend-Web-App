@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { routes } from '../../app-routing.module';
 
 @Component({
   selector: 'app-custom-toolbar',
@@ -6,12 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./custom-toolbar.component.css']
 })
 export class CustomToolbarComponent {
-  toolbar_options = [
-    { path: '/home', title: 'Inicio'},
-    { path: '/forum', title: 'Foro Estudiantil' },
-    { path: '/repos', title: 'Repositorios' },
-    { path: '/multimedia', title: 'Recursos Multimedia' },
-    { path: '/subscriptions', title: 'Suscripciones' }
-  ];
+  home_button = { path: '/home', title: 'Inicio'}
+  forum_button = { path: '/forum', title: 'Foro Estudiantil'}
+  repos_button = { path: '/repos', title: 'Repositorio'}
+  multimedia_button = { path: '/multimedia', title: 'Recursos Multimedia'}
+  subscriptions_button = { path: '/subscriptions', title: 'Planes de Suscripción'}
   account_button = { path: '/account', title: 'Mi Cuenta' };
 }

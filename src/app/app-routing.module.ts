@@ -7,9 +7,9 @@ import { MultimediaComponent } from "./public/pages/multimedia/multimedia.compon
 import { SubscriptionsComponent } from "./public/pages/subscriptions/subscriptions.component";
 import { UserAccountComponent } from "./public/pages/user-account/user-account.component";
 
-const routes: Routes = [
-  { path: 'home', component: SignInComponent },
+export const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: 'home', component: SignInComponent },
   { path: 'forum', component: ForumComponent },
   { path: 'repos', component: ReposComponent },
   { path: 'multimedia', component: MultimediaComponent },
