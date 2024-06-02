@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./subscriptions.component.css']
 })
 export class SubscriptionsComponent {
-  constructor() {}
+  constructor() {
+  }
 }
