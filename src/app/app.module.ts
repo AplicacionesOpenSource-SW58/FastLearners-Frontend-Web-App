@@ -30,6 +30,7 @@ import { MatPaginatorModule } from "@angular/material/paginator";
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatDialogActions } from "@angular/material/dialog";
 import { MatCardModule } from "@angular/material/card";
+import { MatListModule } from "@angular/material/list";
 
 @NgModule({
   declarations: [
@@ -59,7 +60,8 @@ import { MatCardModule } from "@angular/material/card";
     MatPaginatorModule,
     MatToolbarModule,
     MatDialogActions,
-    MatCardModule
+    MatCardModule,
+    MatListModule,
   ],
   providers: [
     provideAnimationsAsync()

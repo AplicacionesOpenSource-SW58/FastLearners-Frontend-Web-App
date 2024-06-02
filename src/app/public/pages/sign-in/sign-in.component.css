@@ -1,14 +1,33 @@
-.signInForm{
-  text-align: center;
-  flex: auto;
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 64px); /* Ocupa toda la pantalla verticalmente */
 }
 
-.email{
-  align-self: center;
+.mat-card {
+  width: 100%;
+  max-width: 400px; /* Limita el ancho de la tarjeta */
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra suave */
 }
-.password{
-  align-self: center;
+
+.signInForm {
+  display: flex;
+  flex-direction: column;
 }
-.buttons{
-  align-self: center;
+
+.mat-form-field {
+  width: 100%; /* Ocupa el ancho disponible */
+  margin-bottom: 20px; /* Espacio entre los campos */
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Espacio entre botones */
+}
+
+button {
+  margin-top: 20px;
 }

@@ -1,8 +1,27 @@
-.user-account {
+.user-account{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 0;
+}
+
+.profile-section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+  justify-content: center;
+  width: 100%;
+}
+
+.profile-section mat-card {
+  width: 100%; /* Establece un ancho completo dentro de su contenedor */
+  max-width: 600px; /* Máximo ancho que puede tener cada card */
+  margin: auto; /* Centra el card horizontalmente */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Opcional: añade sombra para mejor estética */
+}
+
+.profile-section h3{
+  margin-bottom: 10px;
 }
 
 .photo-section {
@@ -23,40 +42,4 @@
   display: flex;
   gap: 10px;
   margin-top: 10px;
-}
-
-.profile-section,
-.personal-data-section,
-.payment-data-section {
-  width: 100%;
-  max-width: 600px;
-  margin-bottom: 20px;
-}
-
-.profile-section h3,
-.personal-data-section h3,
-.payment-data-section h3 {
-  margin-bottom: 10px;
-}
-
-.profile-info,
-.personal-data,
-.payment-data {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 10px;
-}
-
-.profile-info h4,
-.personal-data h4,
-.payment-data h4 {
-  margin-bottom: 5px;
-}
-
-@media screen and (min-width: 768px) {
-  .profile-info,
-  .personal-data,
-  .payment-data {
-    grid-template-columns: repeat(3, 1fr);
-  }
 }

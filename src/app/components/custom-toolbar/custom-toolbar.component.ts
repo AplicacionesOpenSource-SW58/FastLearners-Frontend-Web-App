@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { routes } from '../../app-routing.module';
 
 @Component({
   selector: 'app-custom-toolbar',
@@ -12,5 +11,6 @@ export class CustomToolbarComponent {
   repos_button = { path: '/repos', title: 'Repositorio'}
   multimedia_button = { path: '/multimedia', title: 'Recursos Multimedia'}
   subscriptions_button = { path: '/subscriptions', title: 'Planes de Suscripción'}
+  signIn_button = { path: '/signIn', title: 'Iniciar Sesión'}
   account_button = { path: '/account', title: 'Mi Cuenta' };
 }

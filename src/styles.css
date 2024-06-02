@@ -3,5 +3,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 100vh; /* Asegura que la imagen cubra al menos la altura completa de la ventana */
+  min-height: 100vh; /* Cubre al menos la altura completa de la ventana */
 }
+
+*{ margin: 0; padding: 0; box-sizing: border-box; }

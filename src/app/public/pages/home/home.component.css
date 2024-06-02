@@ -1,0 +1,27 @@
+.home-container {
+  height: calc(100vh - 64px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-container mat-card {
+  width: 100%; /* Ajusta al tamaño del contenedor padre */
+  max-width: 600px; /* Límite máximo de ancho para el card */
+  padding: 20px; /* Espacio interior para no pegar el contenido a los bordes */
+}
+
+.content-overlay {
+  text-align: center;
+  color: #000; /* Color del texto para asegurar que es legible sobre el fondo claro */
+}
+
+.content-overlay h1 {
+  margin-bottom: 20px; /* Espacio después del título */
+  font-size: 2.5rem;
+}
+
+.content-overlay p {
+  margin-bottom: 20px; /* Espacio antes del botón */
+  font-size: 1.5rem;
+}
