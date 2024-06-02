@@ -1,4 +1,12 @@
-<div *ngFor="let repo of repos" class="repo">
+<div class="repos-container">
+  <mat-card class="repos-card-title">
+    <mat-card-header>
+      <mat-card-title>Repositorios</mat-card-title>
+    </mat-card-header>
+  </mat-card>
+</div>
+
+<div *ngFor="let repo of repos" class="repos-container">
   <mat-card>
     <mat-card-header>
       <mat-card-title>{{ repo.name }}</mat-card-title>
@@ -8,7 +16,7 @@
       <p>{{ repo.description }}</p>
     </mat-card-content>
     <mat-card-actions>
-      <button mat-button>VER MÁS</button>
+      <button mat-raised-button color="primary">VER MÁS</button>
     </mat-card-actions>
   </mat-card>
 </div>

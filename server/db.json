@@ -7,7 +7,7 @@
       "threads": 120,
       "posts": 840,
       "image": "https://randomuser.me/api/portraits/women/71.jpg",
-      "lastPoster": "Eva Green",
+      "creatorPoster": "Eva Green",
       "lastPostTime": "07/10/2023"
     },
     {
@@ -17,7 +17,7 @@
       "threads": 80,
       "posts": 300,
       "image": "https://randomuser.me/api/portraits/women/72.jpg",
-      "lastPoster": "Carmen Lucia",
+      "creatorPoster": "Carmen Lucia",
       "lastPostTime": "21/04/2023"
     },
     {
@@ -27,7 +27,7 @@
       "threads": 50,
       "posts": 150,
       "image": "https://randomuser.me/api/portraits/men/70.jpg",
-      "lastPoster": "David Lee",
+      "creatorPoster": "David Lee",
       "lastPostTime": "02/09/2022"
     }
   ],
