@@ -31,6 +31,7 @@ import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatDialogActions } from "@angular/material/dialog";
 import { MatCardModule } from "@angular/material/card";
 import { MatListModule } from "@angular/material/list";
+import { FooterComponent } from "./components/footer/footer.component";
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { MatListModule } from "@angular/material/list";
     ReposComponent,
     MultimediaComponent,
     UserAccountComponent,
-    CustomToolbarComponent
+    CustomToolbarComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
