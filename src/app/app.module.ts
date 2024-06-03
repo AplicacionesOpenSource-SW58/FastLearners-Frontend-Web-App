@@ -32,6 +32,8 @@ import { MatDialogActions } from "@angular/material/dialog";
 import { MatCardModule } from "@angular/material/card";
 import { MatListModule } from "@angular/material/list";
 
+import {ForumsService} from "./learning/services/forums.service";
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -64,7 +66,9 @@ import { MatListModule } from "@angular/material/list";
     MatListModule,
   ],
   providers: [
-    provideAnimationsAsync()
+    provideAnimationsAsync(),
+    ForumsService
+
   ],
   bootstrap: [AppComponent]
 })

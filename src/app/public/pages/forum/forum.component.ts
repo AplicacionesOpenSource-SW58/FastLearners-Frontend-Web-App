@@ -1,5 +1,6 @@
-import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import {ForumsService} from "../../../learning/services/forums.service";
+import {Forum} from "../../../learning/model/forum.entity";
 
 @Component({
   selector: 'app-forum',
@@ -8,13 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class ForumComponent implements OnInit {
-  forums: any[] = [];
+  forumData: Forum;
+  forums: any[];
 
-  constructor(private http: HttpClient) { }
+  constructor(private forumsService: ForumsService) {
+    this.forumData = {} as Forum;
+    this.forums = []
+  }
 
   ngOnInit(): void {
-    this.http.get('http://localhost:3000/forums').subscribe((data: any) => {
-      this.forums = data;
-    });
+    this.forumsService.getAll().subscribe((response: any) => {
+      this.forums = response;
+    })
   }
 }

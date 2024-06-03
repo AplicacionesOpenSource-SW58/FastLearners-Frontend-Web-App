@@ -1,5 +1,6 @@
-import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import {RepositoriesService} from "../../../learning/services/repositories.service";
+import {Repository} from "../../../learning/model/repository.entity";
 
 @Component({
   selector: 'app-repos',
@@ -8,13 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class ReposComponent implements OnInit {
-  repos: any[] = [];
+  reposData: Repository;
+  repos: any[];
 
-  constructor(private http: HttpClient) {}
+  constructor(private repositoriesService: RepositoriesService) {
+    this.reposData = {} as Repository;
+    this.repos = []
+  }
 
   ngOnInit(): void {
-    this.http.get('http://localhost:3000/repositories').subscribe((data: any) => {
-      this.repos = data;
-    });
+    this.repositoriesService.getAll().subscribe((response: any) => {
+      this.repos = response;
+    })
   }
 }

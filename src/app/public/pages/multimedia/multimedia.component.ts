@@ -1,5 +1,6 @@
-import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import {ChannelsService} from "../../../learning/services/channels.service";
+import {Channel} from "../../../learning/model/channel.entity";
 
 @Component({
   selector: 'app-multimedia',
@@ -8,13 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class MultimediaComponent implements OnInit{
-  channels: any[] = [];
+  channelData: Channel;
+  channels: any[];
 
-  constructor(private http: HttpClient) { }
+  constructor(private channelService: ChannelsService) {
+    this.channelData = {} as Channel;
+    this.channels = []
+  }
 
   ngOnInit(): void {
-    this.http.get('http://localhost:3000/channels').subscribe((data: any) => {
-      this.channels = data;
-    });
+    this.channelService.getAll().subscribe((response: any) => {
+      this.channels = response;
+    })
   }
 }
