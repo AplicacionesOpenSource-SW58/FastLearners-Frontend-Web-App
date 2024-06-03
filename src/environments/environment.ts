@@ -1,3 +1,3 @@
 export const environment = {
-  serverBasePath: undefined
+  serverBasePath: 'https://my-json-server.typicode.com/JorgeOrrego1201/FastLearners-json-server-OpenSource'
 };
