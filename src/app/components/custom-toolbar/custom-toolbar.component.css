@@ -1,12 +1,3 @@
-.spacer {
-  flex: 1;
-}
-
-.toolbar-button {
-  margin: 10px;
-}
-
-.logo-toolbar{
+.logo-toolbar {
   height: 50px;
-  margin: 15px;
 }

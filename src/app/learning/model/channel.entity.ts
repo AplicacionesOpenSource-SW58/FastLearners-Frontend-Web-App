@@ -11,3 +11,6 @@ export class Channel {
     this.files = 0;
   }
 }
+
+export class ChannelEntity {
+}

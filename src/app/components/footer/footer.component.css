@@ -28,5 +28,5 @@
 
 p {
   font-size: 0.9rem;
-  white-space: normal; /* Asegura que el espacio blanco se maneje de manera que permita saltos de línea */
+  white-space: normal;
 }

@@ -11,3 +11,6 @@ export class Repository {
     this.lastUpdated = "";
   }
 }
+
+export class RepositoryEntity {
+}

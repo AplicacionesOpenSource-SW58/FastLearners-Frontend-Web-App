@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, HostListener} from '@angular/core';
 
 @Component({
   selector: 'app-custom-toolbar',
@@ -13,4 +13,19 @@ export class CustomToolbarComponent {
   subscriptions_button = { path: '/subscriptions', title: 'Planes de Suscripción'}
   signIn_button = { path: '/signIn', title: 'Iniciar Sesión'}
   account_button = { path: '/account', title: 'Mi Cuenta' };
+
+  isScreenSmall: boolean = window.innerWidth >= 1190;
+
+  constructor() {
+    this.updateScreenSize();
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event: Event) {
+    this.updateScreenSize();
+  }
+
+  private updateScreenSize() {
+    this.isScreenSmall = window.innerWidth < 1190;
+  }
 }

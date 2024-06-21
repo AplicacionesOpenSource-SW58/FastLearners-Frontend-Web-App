@@ -18,9 +18,9 @@ import { ReposComponent } from './public/pages/repos/repos.component';
 import { CustomToolbarComponent } from './components/custom-toolbar/custom-toolbar.component';
 import { MultimediaComponent } from './public/pages/multimedia/multimedia.component';
 import { UserAccountComponent } from './public/pages/user-account/user-account.component';
+import { FooterComponent } from "./components/footer/footer.component";
 
 import { FormsModule } from "@angular/forms";
-
 import { MatInputModule } from "@angular/material/input";
 import { MatButtonModule } from "@angular/material/button";
 import { MatTableModule } from "@angular/material/table";
@@ -31,9 +31,10 @@ import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatDialogActions } from "@angular/material/dialog";
 import { MatCardModule } from "@angular/material/card";
 import { MatListModule } from "@angular/material/list";
-import { FooterComponent } from "./components/footer/footer.component";
+import { MatSidenavModule } from "@angular/material/sidenav";
 
-import {ForumsService} from "./learning/services/forums.service";
+import { ForumsService } from "./learning/services/forums.service";
+import { MatSidenavContainer } from "@angular/material/sidenav";
 
 @NgModule({
   declarations: [
@@ -66,6 +67,8 @@ import {ForumsService} from "./learning/services/forums.service";
     MatDialogActions,
     MatCardModule,
     MatListModule,
+    MatSidenavContainer,
+    MatSidenavModule,
   ],
   providers: [
     provideAnimationsAsync(),
