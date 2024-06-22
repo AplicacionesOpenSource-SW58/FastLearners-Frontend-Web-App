@@ -3,8 +3,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
 
+  background-attachment: fixed;
+  background-image: url('/assets/HeroImage.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 .home-card {
   text-align: center;
   align-items: center;
@@ -12,7 +17,6 @@
   max-width: 600px; /* Límite máximo de ancho para el card */
   padding: 20px; /* Espacio interior para no pegar el contenido a los bordes */
 }
-
 mat-card-header {
   padding-bottom: 16px;
 }

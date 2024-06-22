@@ -1,30 +1,35 @@
-<mat-sidenav-container>
-  <mat-sidenav #sidenav mode="over" position="start">
-    <a mat-button [routerLink]="home_button.path">{{home_button.title}}</a>
-    <a mat-button [routerLink]="forum_button.path">{{forum_button.title}}</a>
-    <a mat-button [routerLink]="repos_button.path">{{repos_button.title}}</a>
-    <a mat-button [routerLink]="multimedia_button.path">{{multimedia_button.title}}</a>
-    <a mat-button [routerLink]="subscriptions_button.path">{{subscriptions_button.title}}</a>
-    <a mat-raised-button [routerLink]="signIn_button.path">{{signIn_button.title}}</a>
-    <a mat-raised-button [routerLink]="account_button.path">{{account_button.title}}</a>
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="menu-sidenav" fixedInViewport>
+    <mat-toolbar>FastLearners</mat-toolbar>
+    <mat-nav-list>
+      <mat-list-item *ngFor="let route of routes">
+        <a mat-button [routerLink]="route.path">{{route.title}}</a>
+      </mat-list-item>
+      <mat-list-item *ngFor="let route of routesAccount">
+        <a mat-button [routerLink]="route.path">{{route.title}}</a>
+      </mat-list-item>
+    </mat-nav-list>
   </mat-sidenav>
-
   <mat-sidenav-content>
-    <mat-toolbar>
+    <mat-toolbar class="menu-toolbar">
       <img src="./assets/logo.svg" alt="logo-toolbar" class="logo-toolbar">
-      <h1>Fast Learners</h1>
-      <button mat-icon-button (click)="sidenav.toggle()" *ngIf="isScreenSmall">
+      <span>Fast Learners</span>
+      <button mat-icon-button class="button-sidenav" (click)="drawer.toggle()" *ngIf="isScreenSmall">
         <mat-icon>menu</mat-icon>
       </button>
       <div *ngIf="!isScreenSmall">
-        <a mat-button [routerLink]="home_button.path">{{home_button.title}}</a>
-        <a mat-button [routerLink]="forum_button.path">{{forum_button.title}}</a>
-        <a mat-button [routerLink]="repos_button.path">{{repos_button.title}}</a>
-        <a mat-button [routerLink]="multimedia_button.path">{{multimedia_button.title}}</a>
-        <a mat-button [routerLink]="subscriptions_button.path">{{subscriptions_button.title}}</a>
-        <a mat-raised-button [routerLink]="signIn_button.path">{{signIn_button.title}}</a>
-        <a mat-raised-button [routerLink]="account_button.path">{{account_button.title}}</a>
+        <span>
+          <a mat-button *ngFor="let route of routes"
+             [routerLink]="route.path">{{route.title}}</a>
+        </span>
+        <span class="spacer"></span>
+        <span>
+          <a mat-raised-button *ngFor="let route of routesAccount"
+             [routerLink]="route.path">{{route.title}}</a>
+        </span>
       </div>
     </mat-toolbar>
+    <router-outlet/>
+    <app-footer/>
   </mat-sidenav-content>
 </mat-sidenav-container>
